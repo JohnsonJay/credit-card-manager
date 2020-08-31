@@ -44,6 +44,11 @@ export default class CreditCardComponent extends React.Component {
         return this.state.bannedCountries.includes(country);
     }
 
+    checkIfCardExists(cardNumber) {
+        const cardList = this.state.cardData.map(card => card.cardNumber);
+        return cardList.includes(cardNumber);
+    }
+
     banCountry(country) {
         if (country.length > 0 && !this.state.bannedCountries.includes(country)) {
             const bannedCountryLists = this.state.bannedCountries;
@@ -55,7 +60,7 @@ export default class CreditCardComponent extends React.Component {
     }
 
     addCreditCard() {
-        if (!this.checkIfCardIsBanned(this.state.country)) {
+        if (!this.checkIfCardIsBanned(this.state.country) && !this.checkIfCardExists(this.state.cardNumber)) {
             const cardList = this.state.cardData;
 
             cardList.push({
