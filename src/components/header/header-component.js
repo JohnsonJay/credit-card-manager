@@ -1,5 +1,6 @@
 import React from 'react';
 import BanCountryModal from '../modals/ban-country-modal';
+import MoreInfoModal from '../modals/more-info-modal';
 
 const headerComponent = () => (
     <div className='jca-topbar'>
@@ -12,7 +13,7 @@ const headerComponent = () => (
         <ul className='jca-topbar__nav'>
             <li className='jca-topbar__nav-item'>
                 <div className='jca-topbar__nav-content'>
-                    More information
+                    <MoreInfoModal />
                 </div>
 
             </li>

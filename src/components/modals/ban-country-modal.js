@@ -11,7 +11,7 @@ const BanCountryModal = (props) => {
 
     return (
         <>
-            <Button onClick={handleShow}>
+            <Button className='alert-warning' onClick={handleShow}>
                 Ban a country
             </Button>
 
