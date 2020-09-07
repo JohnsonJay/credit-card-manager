@@ -1,15 +1,15 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
-import Container from 'react-bootstrap/cjs/Container';
-import Row from 'react-bootstrap/cjs/Row';
-import Col from 'react-bootstrap/cjs/Col';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import CreditCardInput from 'react-credit-card-input';
-import ButtonToolbar from "react-bootstrap/ButtonToolbar";
-import Button from "react-bootstrap/Button";
-import InputGroup from "react-bootstrap/InputGroup";
-import FormControl from "react-bootstrap/FormControl";
+import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
+import Button from 'react-bootstrap/Button';
+import InputGroup from 'react-bootstrap/InputGroup';
+import FormControl from 'react-bootstrap/FormControl';
 import CreditCardListComponent from '../credit-card-list-component/credit-card-list-component';
-import BannedCountriesListComponent from "../banned-countries-list-component/banned-countries-list-component";
+import BannedCountriesListComponent from '../banned-countries-list-component/banned-countries-list-component';
 
 export default class CreditCardComponent extends React.Component {
 
